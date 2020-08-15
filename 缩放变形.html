@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缩放变形</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        div.container {
+            width: 800px;
+            min-height: 600px;
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+        ul.gallery li {
+            float: left;
+            margin: 0 10px;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            list-style: none;
+        }
+        ul.gallery li a img {
+            float: left;
+            width: 200px;
+            /*平滑缩放*/
+            transition: transform .2s ease-in-out;
+        }
+        ul.gallery li a:hover img {
+            /*从底部，左边开始放大1.5倍*/
+            /*
+            transform-origin: bottom left;
+            */
+            /*将图像放大1.5倍*/
+            transform: scale(1.5) rotate(10deg);
+            box-shadow: 4px 4px 10px rgb(0, 0, 0, .5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="gallery">
+            <li><a href="#"><img src="images/1.jpg" alt="1"></a></li>
+            <li><a href="#"><img src="images/2.jpg" alt="2"></a></li>
+            <li><a href="#"><img src="images/3.jpg" alt="3"></a></li>
+        </ul>
+    </div>
+</body>
+</html>

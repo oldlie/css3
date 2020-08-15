@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        a.foo {
+            color: #ffffff;
+            padding: 5px 10px;
+            background: #9c3;
+            /* 过渡属性，持续时间，动画方式，延迟时间 */
+            transition: background 1s ease .5s, color .2s linear, width 1s linear;
+            /*
+            transition-property: initial;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay: .5s;
+            */
+        }
+        a.foo:hover,a.foo:focus {
+            background: #690;
+            color: #030;
+        }
+        div.container {
+            margin: 30px auto;
+            width: 100px;
+            height: 30px;
+            background: #9c3;
+            transition: width 1s linear;
+        }
+        div.container:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="foo">Transition me!</a>
+    <div class="container"></div>
+</body>
+</html>

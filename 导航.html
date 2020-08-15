@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        div.container {
+            width: 800px;
+            height: 600px;
+            margin: 0;
+            padding: 10;
+            box-sizing: border-box;
+            background: #9e1068;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        #nav {
+            float: right;
+            padding: 42px 0 0 30px;
+        }
+        #nav li {
+            float: left;
+            margin: 0 0 0 5px;
+        }
+        #nav li a {
+            padding: 5px 15px;
+            font-weight: bold;
+            color: rgb(255, 255, 255, .7);
+            text-shadow: 0 1px 1px rgb(0, 0, 0, .5);
+            border-radius: 14px;
+            transition: all .3s ease-in-out;
+        }
+        #nav li a:hover,
+        #nav li a:focus{
+            color: #ffffff;
+            background: rgb(0, 0, 0, .15);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <ul id="nav">
+            <li><a href="#">News</a></li>
+            <li><a href="#">Things</a></li>
+            <li><a href="#">Stuff</a></li>
+            <li><a href="#">Junk</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
